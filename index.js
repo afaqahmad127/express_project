@@ -14,6 +14,27 @@ app.use('/resource', getResources);
 app.get('/blogs/view', async (req, res) => {
     res.render('resource/view')
 });
+app.get('/', async (req, res) => {
+
+    try {
+        // console.log('req -> ',req);
+        await Res.find().then(function (ninja) {
+
+            var oj = JSON.stringify(ninja);
+            var hh = JSON.parse(oj)
+
+            res.render('resource/table', { data: hh })
+        })
+
+
+        // res.send(users);
+
+    } catch (error) {
+        console.log(error.message);
+    }
+
+
+});
 
 
 
