@@ -6,7 +6,7 @@ app.use('/assets', express.static(__dirname + '/assets'));
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.urlencoded({ extended: false }));
-const Res = require('../models/resource'); // 
+const Res = require('./models/resource'); // 
 var multer = require('multer');
 
 
@@ -37,7 +37,7 @@ app.get('/', async (req, res) => {
 
 
 });
-router.get('/delete/:id', async (req, res) => {
+app.get('/delete/:id', async (req, res) => {
     Res.findByIdAndDelete(req.params.id, function (err) {
         if (err) {
             res.send('error in deleting ');
