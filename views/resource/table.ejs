@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!--begin::Head-->
+    <head>
+        <base href="" />
+        <meta charset="utf-8" />
+        <title>Column Rendering Examples | Keenthemes</title>
+        <meta name="description" content="Column rendering datatables examples" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="canonical" href="https://keenthemes.com/metronic" />
+        <!--begin::Fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+        <!--end::Fonts-->
+        <!--begin::Page Vendors Styles(used by this page)-->
+        <link href="/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+        <!--end::Page Vendors Styles-->
+        <!--begin::Global Theme Styles(used by all pages)-->
+        <link href="/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+        <!-- <link href="/assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" /> -->
+        <link href="/assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+        <!--end::Global Theme Styles-->
+        <!--begin::Layout Themes(used by all pages)-->
+        <!--end::Layout Themes-->
+        <link rel="shortcut icon" href="/assets/media/logos/favicon.ico" />
+    </head>
+    <!--end::Head-->
+    <!--begin::Body-->
+<body id="kt_body" class="header-mobile-fixed subheader-enabled aside-enabled aside-fixed aside-secondary-enabled page-loading">
+        <!--begin::Main-->
+        <!--begin::Header Mobile-->
+        <div id="kt_header_mobile" class="header-mobile">
+            <!--begin::Logo-->
+            <a>
+                <img alt="Logo" src="/assets/media/logos/logo-letter-2.png" class="logo-default max-h-30px" />
+            </a>
+            <!--end::Logo-->
+            <!--begin::Toolbar-->
+            <div class="d-flex align-items-center">
+                <button class="btn p-0 burger-icon burger-icon-left" id="kt_aside_mobile_toggle">
+                    <span></span>
+                </button>
+            </div>
+            <!--end::Toolbar-->
+        </div>
+        <!--end::Header Mobile-->
+        <div class="d-flex flex-column flex-root">
+            <!--begin::Page-->
+            <div class="d-flex flex-row flex-column-fluid page">
+                <!--begin::Aside-->
+                <div class="aside aside-left d-flex aside-fixed" id="kt_aside">
+                    <!--begin::Primary-->
+                    <div class="aside-primary d-flex flex-column align-items-center flex-row-auto">
+                        <!--begin::Brand-->
+
+                        <!--end::Brand-->
+                        <!--begin::Nav Wrapper-->
+                        <div class="aside-nav d-flex flex-column align-items-center flex-column-fluid py-5 scroll scroll-pull">
+                            <!--begin::Nav-->
+                            <ul class="nav flex-column" role="tablist">
+                                <!--begin::Item-->
+                                <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Latest Projects">
+                                    <a href="#" class="nav-link btn btn-icon btn-clean btn-lg active" data-toggle="tab" data-target="#kt_aside_tab_1" role="tab">
+                                        <i class="icon-2x text-dark-50 flaticon-home-2"></i>
+                                    </a>
+                                </li>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Metronic Features">
+                                    <a href="#" class="nav-link btn btn-icon btn-clean btn-lg" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
+                                        <i class="fas fa-bars"></i>
+                                    </a>
+                                </li>
+                                <div class="aside-brand d-flex flex-column align-items-center flex-column-auto py-5 py-lg-12">
+                                    <!--begin::Logo-->
+                                    <a>
+                                        <img alt="Logo" src="/assets/media/logos/logo-letter-2.png" class="max-h-30px" />
+                                    </a>
+                                    <!--end::Logo-->
+                                </div>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <li class="nav-item mb-3" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Metronic Features">
+                                    <a href="#" class="nav-link btn btn-icon btn-clean btn-lg" data-toggle="tab" data-target="#kt_aside_tab_2" role="tab">
+                                        <i class="icon-2x text-dark-50 flaticon-stopwatch"></i>
+                                    </a>
+                                </li>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+
+                                <!--end::Item-->
+                                <!--begin::Item-->
+
+                                <!--end::Item-->
+                            </ul>
+                            <!--end::Nav-->
+                        </div>
+                        <!--end::Nav Wrapper-->
+                        <!--begin::Footer-->
+                        <div class="aside-footer d-flex flex-column align-items-center flex-column-auto py-4 py-lg-10">
+                            <!--begin::Aside Toggle-->
+
+                            <!--end::Aside Toggle-->
+                            <!--begin::Quick Actions-->
+                            <a href="#" class="btn btn-icon btn-clean btn-lg mb-1" id="kt_quick_actions_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Quick Actions">
+                                <i class="icon-2x text-dark-50 flaticon-settings"></i>
+                            </a>
+                            <!--end::Quick Actions-->
+                            <!--begin::Quick Panel-->
+                            <a href="#" class="btn btn-icon btn-clean btn-lg mb-1 position-relative" id="kt_quick_panel_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Quick Panel">
+                                <i class="icon-2x text-dark-50 flaticon2-bell-1"></i>
+                                <span class="label label-sm label-light-danger label-rounded font-weight-bolder position-absolute top-0 right-0 mt-1 mr-1">99</span>
+                            </a>
+                            
+                            <!--end::Quick Panel-->
+                            <!--begin::User-->
+                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Profile">
+                                <i class="icon-2x text-dark-50 flaticon-search-magnifier-interface-symbol"></i>
+                            </a>
+                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Profile">
+                                <i class="icon-2x text-dark-50 flaticon-questions-circular-button"></i>
+                            </a>
+                            <a href="#" class="btn btn-icon btn-clean btn-lg w-40px h-40px" id="kt_quick_user_toggle" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="User Profile">
+                                <i class="icon-2x text-dark-50 flaticon-book"></i>
+                            </a>
+                            <!--end::User-->
+                        </div>
+                        <!--end::Footer-->
+                    </div>
+                    <!--end::Primary-->
+                </div>
+                <!--end::Aside-->
+                <!--begin::Wrapper-->
+                <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+                    <!--begin::Content-->
+                    <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+                        <!--begin::Entry-->
+                        <div class="d-flex flex-column-fluid">
+                            <!--begin::Container-->
+<div class="container">
+                                <div class="row mt-3 mb-2">
+                                    <div class="col-md-3">
+                                        <div class="d-flex">
+                                            <label class="font-weight-bold mr-2 mt-3" for="exampleSelectl">Ads</label>
+                                            <input type="text" class="form-control form-control-sm" placeholder="A(123456789)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 offset-lg-5">
+                                        <button class="btn btn-sm btn-secondary" type="button"><i class="ki ki-reload text-dark-50"></i></button>
+                                        <button class="btn btn-sm btn-secondary" type="button">Discard Draft</button>
+                                        <button class="btn btn-sm btn-secondary" type="button">Review and Publish</button>
+                                        <button class="btn btn-sm btn-secondary" type="button"><i class="text-dark-50 ki ki-more-hor"></i></button>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-md-9">
+                                        <div>
+                                            <div class="input-icon">
+                                                <input type="text" class="form-control" placeholder="Search..." />
+                                                <span><i class="flaticon2-search-1 icon-md"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="input-group" id="kt_daterangepicker_6">
+                                            <input type="text" class="form-control" readonly placeholder="Select date range" />
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="la la-calendar-check-o"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!--begin::Card-->
+                                        <div class="card card-custom">
+                                            <div class="card-body pt-1">
+                                                <div>
+                                                    <div>
+                                                        <div class="col-12 my-1">
+                                                            <button class="btn btn-sm btn-success" type="button"><i class="fas fa-plus"></i>Create</button>
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="far fa-copy"></i></button>
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-angle-down"></i></button>
+
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-pen"></i></button>
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-angle-down"></i></button>
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-flask"></i>A/B Test</button>
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="far fa-file-alt"></i></button>
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-undo-alt"></i></button>
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="text-dark-50 flaticon2-rubbish-bin-delete-button"></i></button>
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="text-dark-50 flaticon-users-1"></i></button>
+
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-exchange-alt"></i></button>
+                                                            <button class="btn btn-sm btn-secondary" type="button">Preview</button>
+                                                            <button class="btn btn-sm btn-secondary" type="button"><i class="fas fa-angle-down"></i></button>
+
+                                                            <button class="btn btn-sm btn-secondary float-right mr-1" type="button"><span class="mr-1">Reports</span><i class="fas fa-angle-down"></i></button>
+                                                            <button class="btn btn-sm btn-secondary float-right mr-1" type="button"><i class="fas fa-grip-lines-vertical"></i><i class="fas fa-angle-down"></i></button>
+                                                            <button class="btn btn-sm btn-secondary float-right mr-1" type="button"><i class="fas fa-grip-lines"></i><i class="fas fa-angle-down"></i></button>
+                                                            <span class="switch switch-secondary float-right mr-1">
+                                                                <span class="mr-1">View Setup</span>
+                                                                <label>
+                                                                    <input type="checkbox" checked="checked" name="select" />
+                                                                    <span></span>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+
+                                                        <ul class="nav nav-tabs nav-tabs-line">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link bg-light px-2 mx-1 py-2" data-toggle="tab" href="#kt_tab_pane_1">Resource Center</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link bg-light px-2 mx-1 py-1" data-toggle="tab" href="#kt_tab_pane_2">
+                                                                    Campaigns
+                                                                    <div class="alert alert-custom alert-primary fade show px-2 py-1 ml-4 mb-0" role="alert" style="border-radius: 20px;">
+                                                                        <small class="alert-text">16 Selected</small>
+                                                                        <div class="alert-close">
+                                                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                                                <span aria-hidden="true"><i class="ki ki-close"></i></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link bg-light px-2 mx-1 py-2" data-toggle="tab" href="#kt_tab_pane_3">Add Sets For 16 Campaigns</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link bg-light px-2 mx-1 py-2 active" data-toggle="tab" href="#kt_tab_pane_4">Add For 16 Campaigns</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content mt-5" id="myTabContent">
+                                                            <div class="tab-pane fade" id="kt_tab_pane_1" role="tabpanel" aria-labelledby="kt_tab_pane_1">Tab content 1</div>
+                                                            <div class="tab-pane fade" id="kt_tab_pane_2" role="tabpanel" aria-labelledby="kt_tab_pane_2">Tab content 2</div>
+                                                            <div class="tab-pane fade" id="kt_tab_pane_3" role="tabpanel" aria-labelledby="kt_tab_pane_3">Tab content 3</div>
+                                                            <div class="tab-pane fade show active" id="kt_tab_pane_4" role="tabpanel" aria-labelledby="kt_tab_pane_4">
+                                                                <!--begin: Datatable-->
+                                                                <!--begin: Datatable-->
+                                                                <table class="table table-bordered table-checkable table-hover table-separate" id="kt_datatable">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th>Off/On</th>
+                                                                            <th>Add Name</th>
+                                                                            
+                                                                            
+                                                                            <td>Delievery</td>
+                                                                            <td>Set Name</td>
+                                                                            <td>Bid Strategy</td>
+                                                                            <td>Budget</td>
+                                                                
+                                                                            <td>Results</td>
+                                                                            <td>Impressions</td>
+                                                                            <td>Cost Per result</td>
+                                                                            <td>Add to Cart</td>
+                                                                            <td>Purchases</td>
+                                                                
+                                                                            <td>Amount Spent</td>
+                                                                            <td>Purchase conversion value</td>
+                                                                            <td>Purchase Roas</td>
+                                                                            <td>Unique Link Click</td>
+                                                                            <td>CPC</td>
+                                                                
+                                                                            <td>Company Name</td>
+                                                                            <td>Ship Date</td>
+                                                                            <td>Status</td>
+                                                                            <td>Type</td>
+                                                                            <td>Action</td>
+                                                                            
+                                                                
+                                                                
+                                                                        </tr>
+                                                                        </thead>
+                                                                    <tbody>
+                                                                        
+                                                                    
+                                                                    <% for (var i = 0; i < data.length; i++) { %>
+                                                                        <tr>
+                                                                            <td><%= data[i]._id %>></td>
+                                                                            <td>
+                                                                                <span class="switch switch-sm switch-primary">
+                                                                                    <label>
+                                                                                        <input type="checkbox" checked="checked" name="select" />
+                                                                                        <span></span>
+                                                                                    </label>
+                                                                                </span>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="align-items-center">
+                                                                                    <div class="symbol symbol-50 flex-shrink-0">
+                                                                                        <img src="/<%= data[i].fileinfo %>" alt="photo" />
+                                                                                    </div>
+                                                                                    <div class="ml-3">
+                                                                                        <span class="text-dark-75 font-weight-bold line-height-sm d-block pb-2"><%= data[i].name %> <small class="d-none"><a href="#" class="text-muted text-hover-primary mr-2"><i class="icon-md text-dark-50 flaticon2-edit"></i></a></small></span>
+                                                                                        <small class="d-none">
+                                                                                            <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm far fa-chart-bar"></i> View Charts</a>
+                                                                                            <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm text-dark-50 flaticon2-edit mr-1"></i>Edit</a>
+                                                                                            <a href="#" class="text-muted text-hover-primary mr-2"> <i class="icon-sm far fa-copy mr-1"></i>Duplicate</a>
+                                                                                        </small>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                            
+                                                                            
+                                                                            <td><%= data[i].delivery %></td>
+                                                                            <td><%= data[i].set_name %></td>
+                                                                            <td><%= data[i].bid_strategy %></td>
+                                                                            <td><%= data[i].budget %></td>
+                                                                            <td><%= data[i].results %></td>
+                                                                            <td><%= data[i].impressions %></td>
+                                                                            <td><%= data[i].cost_per_result %></td>
+                                                                            <td><%= data[i].add_to_cart %></td>
+                                                                            <td><%= data[i].purchases %></td>
+                                                                            <td><%= data[i].amount_spent %></td>
+                                                                            <td><%= data[i].purchase_con_val %></td>
+                                                                            <td><%= data[i].purchase_roas %></td>
+                                                                            <td><%= data[i].unique_link_click %></td>
+                                                                            <td><%= data[i].cpc %></td>
+                                                                            <td><%= data[i].company_name %></td>
+                                                                            <td><%= data[i].ship_date %></td>
+                                                                            <td><%= data[i].status %></td>
+                                                                            <td><%= data[i].type %></td>
+                                                                            <td>
+                                                                                <a href="/resource/delete/<%= data[i]._id %>">delete</a>
+                                                                            </td>
+                                                                
+                                                                        </tr>
+                                                                    <% } %>
+                                                                
+                                                                    </tbody>
+                                                                    
+                                                                </table>
+
+                                                                <!--end: Datatable-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end::Card-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end::Container-->
+                        </div>
+                        <!--end::Entry-->
+                    </div>
+                    <!--end::Content-->
+                    <!--begin::Footer-->
+                    <!--doc: add "bg-white" class to have footer with solod background color-->
+                    <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+                        <!--begin::Container-->
+                        <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+                            <!--begin::Copyright-->
+                            <div class="text-dark order-2 order-md-1">
+                                <span class="text-muted font-weight-bold mr-2">2021©</span>
+                                
+                            </div>
+                            <!--end::Copyright-->
+                            <!--begin::Nav-->
+                            <div class="nav nav-dark order-1 order-md-2">
+                                <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pr-3 pl-0">About</a>
+                                <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link px-3">Team</a>
+                                <a href="http://keenthemes.com/metronic" target="_blank" class="nav-link pl-3 pr-0">Contact</a>
+                            </div>
+                            <!--end::Nav-->
+                        </div>
+                        <!--end::Container-->
+                    </div>
+                    <!--end::Footer-->
+                </div>
+                <!--end::Wrapper-->
+            </div>
+            <!--end::Page-->
+        </div>
+        <!--end::Main-->
+        
+       
+        <!--begin::Quick Panel-->
+        
+        </div>
+        <!--end::Quick Panel-->
+        <!--begin::Chat Panel-->
+        <div class="modal modal-sticky modal-sticky-bottom-right" id="kt_chat_modal" role="dialog" data-backdrop="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!--begin::Card-->
+                    <div class="card card-custom">
+                        <!--begin::Header-->
+                        <div class="card-header align-items-center px-4 py-3">
+                            <div class="text-left flex-grow-1">
+                                <!--begin::Dropdown Menu-->
+                                <div class="dropdown dropdown-inline">
+                                    <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="svg-icon svg-icon-lg">
+                                            <!--begin::Svg Icon | path:/assets/media/svg/icons/Communication/Add-user.svg-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <polygon points="0 0 24 0 24 24 0 24" />
+                                                    <path
+                                                        d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                                        fill="#000000"
+                                                        fill-rule="nonzero"
+                                                        opacity="0.3"
+                                                    />
+                                                    <path
+                                                        d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                                        fill="#000000"
+                                                        fill-rule="nonzero"
+                                                    />
+                                                </g>
+                                            </svg>
+                                            <!--end::Svg Icon-->
+                                        </span>
+                                    </button>
+                                    <div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-md">
+                                        <!--begin::Navigation-->
+                                        <ul class="navi navi-hover py-5">
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-drop"></i>
+                                                    </span>
+                                                    <span class="navi-text">New Group</span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-list-3"></i>
+                                                    </span>
+                                                    <span class="navi-text">Contacts</span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-rocket-1"></i>
+                                                    </span>
+                                                    <span class="navi-text">Groups</span>
+                                                    <span class="navi-link-badge">
+                                                        <span class="label label-light-primary label-inline font-weight-bold">new</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-bell-2"></i>
+                                                    </span>
+                                                    <span class="navi-text">Calls</span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-gear"></i>
+                                                    </span>
+                                                    <span class="navi-text">Settings</span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-separator my-3"></li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-magnifier-tool"></i>
+                                                    </span>
+                                                    <span class="navi-text">Help</span>
+                                                </a>
+                                            </li>
+                                            <li class="navi-item">
+                                                <a href="#" class="navi-link">
+                                                    <span class="navi-icon">
+                                                        <i class="flaticon2-bell-2"></i>
+                                                    </span>
+                                                    <span class="navi-text">Privacy</span>
+                                                    <span class="navi-link-badge">
+                                                        <span class="label label-light-danger label-rounded font-weight-bold">5</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!--end::Navigation-->
+                                    </div>
+                                </div>
+                                <!--end::Dropdown Menu-->
+                            </div>
+                            <div class="text-center flex-grow-1">
+                                <div class="text-dark-75 font-weight-bold font-size-h5">Matt Pears</div>
+                                <div>
+                                    <span class="label label-dot label-success"></span>
+                                    <span class="font-weight-bold text-muted font-size-sm">Active</span>
+                                </div>
+                            </div>
+                            <div class="text-right flex-grow-1">
+                                <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-dismiss="modal">
+                                    <i class="ki ki-close icon-1x"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!--end::Header-->
+                        <!--begin::Body-->
+                        <div class="card-body">
+                            <!--begin::Scroll-->
+                            <div class="scroll scroll-pull" data-height="375" data-mobile-height="300">
+                                <!--begin::Messages-->
+                                <div class="messages">
+                                    <!--begin::Message In-->
+                                    <div class="d-flex flex-column mb-5 align-items-start">
+                                        <div class="d-flex align-items-center">
+                                            <div class="symbol symbol-circle symbol-40 mr-3">
+                                                <img alt="Pic" src="/assets/media/users/300_12.jpg" />
+                                            </div>
+                                            <div>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
+                                                <span class="text-muted font-size-sm">2 Hours</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-success text-dark-50 font-weight-bold font-size-lg text-left max-w-400px">How likely are you to recommend our company to your friends and family?</div>
+                                    </div>
+                                    <!--end::Message In-->
+                                    <!--begin::Message Out-->
+                                    <div class="d-flex flex-column mb-5 align-items-end">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <span class="text-muted font-size-sm">3 minutes</span>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
+                                            </div>
+                                            <div class="symbol symbol-circle symbol-40 ml-3">
+                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">
+                                            Hey there, we’re just writing to let you know that you’ve been subscribed to a repository on GitHub.
+                                        </div>
+                                    </div>
+                                    <!--end::Message Out-->
+                                    <!--begin::Message In-->
+                                    <div class="d-flex flex-column mb-5 align-items-start">
+                                        <div class="d-flex align-items-center">
+                                            <div class="symbol symbol-circle symbol-40 mr-3">
+                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                            </div>
+                                            <div>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
+                                                <span class="text-muted font-size-sm">40 seconds</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-success text-dark-50 font-weight-bold font-size-lg text-left max-w-400px">Ok, Understood!</div>
+                                    </div>
+                                    <!--end::Message In-->
+                                    <!--begin::Message Out-->
+                                    <div class="d-flex flex-column mb-5 align-items-end">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <span class="text-muted font-size-sm">Just now</span>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
+                                            </div>
+                                            <div class="symbol symbol-circle symbol-40 ml-3">
+                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">You’ll receive notifications for all issues, pull requests!</div>
+                                    </div>
+                                    <!--end::Message Out-->
+                                    <!--begin::Message In-->
+                                    <div class="d-flex flex-column mb-5 align-items-start">
+                                        <div class="d-flex align-items-center">
+                                            <div class="symbol symbol-circle symbol-40 mr-3">
+                                                <img alt="Pic" src="/assets/media/users/300_12.jpg" />
+                                            </div>
+                                            <div>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
+                                                <span class="text-muted font-size-sm">40 seconds</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-success text-dark-50 font-weight-bold font-size-lg text-left max-w-400px">
+                                            You can unwatch this repository immediately by clicking here: <a href="#">https://github.com</a>
+                                        </div>
+                                    </div>
+                                    <!--end::Message In-->
+                                    <!--begin::Message Out-->
+                                    <div class="d-flex flex-column mb-5 align-items-end">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <span class="text-muted font-size-sm">Just now</span>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
+                                            </div>
+                                            <div class="symbol symbol-circle symbol-40 ml-3">
+                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">
+                                            Discover what students who viewed Learn Figma - UI/UX Design. Essential Training also viewed
+                                        </div>
+                                    </div>
+                                    <!--end::Message Out-->
+                                    <!--begin::Message In-->
+                                    <div class="d-flex flex-column mb-5 align-items-start">
+                                        <div class="d-flex align-items-center">
+                                            <div class="symbol symbol-circle symbol-40 mr-3">
+                                                <img alt="Pic" src="/assets/media/users/300_12.jpg" />
+                                            </div>
+                                            <div>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
+                                                <span class="text-muted font-size-sm">40 seconds</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-success text-dark-50 font-weight-bold font-size-lg text-left max-w-400px">Most purchased Business courses during this sale!</div>
+                                    </div>
+                                    <!--end::Message In-->
+                                    <!--begin::Message Out-->
+                                    <div class="d-flex flex-column mb-5 align-items-end">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <span class="text-muted font-size-sm">Just now</span>
+                                                <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
+                                            </div>
+                                            <div class="symbol symbol-circle symbol-40 ml-3">
+                                                <img alt="Pic" src="/assets/media/users/300_21.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold font-size-lg text-right max-w-400px">
+                                            Company BBQ to celebrate the last quater achievements and goals. Food and drinks provided
+                                        </div>
+                                    </div>
+                                    <!--end::Message Out-->
+                                </div>
+                                <!--end::Messages-->
+                            </div>
+                            <!--end::Scroll-->
+                        </div>
+                        <!--end::Body-->
+                        <!--begin::Footer-->
+                        <div class="card-footer align-items-center">
+                            <!--begin::Compose-->
+                            <textarea class="form-control border-0 p-0" rows="2" placeholder="Type a message"></textarea>
+                            <div class="d-flex align-items-center justify-content-between mt-5">
+                                <div class="mr-3">
+                                    <a href="#" class="btn btn-clean btn-icon btn-md mr-1">
+                                        <i class="flaticon2-photograph icon-lg"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-clean btn-icon btn-md">
+                                        <i class="flaticon2-photo-camera icon-lg"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary btn-md text-uppercase font-weight-bold chat-send py-2 px-6">Send</button>
+                                </div>
+                            </div>
+                            <!--begin::Compose-->
+                        </div>
+                        <!--end::Footer-->
+                    </div>
+                    <!--end::Card-->
+                </div>
+            </div>
+        </div>
+        <!--end::Chat Panel-->
+        <!--begin::Scrolltop-->
+        <div id="kt_scrolltop" class="scrolltop">
+            <span class="svg-icon">
+                <!--begin::Svg Icon | path:/assets/media/svg/icons/Navigation/Up-2.svg-->
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <polygon points="0 0 24 0 24 24 0 24" />
+                        <rect fill="#000000" opacity="0.3" x="11" y="10" width="2" height="10" rx="1" />
+                        <path
+                            d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z"
+                            fill="#000000"
+                            fill-rule="nonzero"
+                        />
+                    </g>
+                </svg>
+                <!--end::Svg Icon-->
+            </span>
+        </div>
+        <!--end::Scrolltop-->
+
+        <script>
+            var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";
+        </script>
+        <!--begin::Global Config(global config for global JS scripts)-->
+        <script>
+            var KTAppSettings = {
+                breakpoints: { sm: 576, md: 768, lg: 992, xl: 1200, xxl: 1200 },
+                colors: {
+                    theme: {
+                        base: { white: "#ffffff", primary: "#1BC5BD", secondary: "#E5EAEE", success: "#1BC5BD", info: "#6993FF", warning: "#FFA800", danger: "#F64E60", light: "#F3F6F9", dark: "#212121" },
+                        light: { white: "#ffffff", primary: "#1BC5BD", secondary: "#ECF0F3", success: "#C9F7F5", info: "#E1E9FF", warning: "#FFF4DE", danger: "#FFE2E5", light: "#F3F6F9", dark: "#D6D6E0" },
+                        inverse: { white: "#ffffff", primary: "#ffffff", secondary: "#212121", success: "#ffffff", info: "#ffffff", warning: "#ffffff", danger: "#ffffff", light: "#464E5F", dark: "#ffffff" },
+                    },
+                    gray: { "gray-100": "#F3F6F9", "gray-200": "#ECF0F3", "gray-300": "#E5EAEE", "gray-400": "#D6D6E0", "gray-500": "#B5B5C3", "gray-600": "#80808F", "gray-700": "#464E5F", "gray-800": "#1B283F", "gray-900": "#212121" },
+                },
+                "font-family": "Poppins",
+            };
+        </script>
+        <!--end::Global Config-->
+        <!--begin::Global Theme Bundle(used by all pages)-->
+        <script src="/assets/plugins/global/plugins.bundle.js"></script>
+        <!-- <script src="/assets/plugins/custom/prismjs/prismjs.bundle.js"></script> -->
+        <script src="/assets/js/scripts.bundle.js"></script>
+        <!--end::Global Theme Bundle-->
+        <!--begin::Page Vendors(used by this page)-->
+        <script src="/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+        <!--end::Page Vendors-->
+        <!--begin::Page Scripts(used by this page)-->
+        <script src="/assets/js/pages/crud/datatables/basic/basic.js"></script>
+        <!--end::Page Scripts-->
+    </body>
+    <!--end::Body-->
+    <script type="text/javascript">
+$("tr").hover(
+  function () {
+    $(this).find('small').removeClass("d-none");
+  },
+);
+$("tr").mouseleave(
+  function () {
+    $(this).find('small').addClass("d-none");
+  },
+);
+
+
+
+        // Class definition
+
+        var KTBootstrapDaterangepicker = (function () {
+            // Private functions
+            var demos = function () {
+                // minimum setup
+                $("#kt_daterangepicker_1, #kt_daterangepicker_1_modal").daterangepicker({
+                    buttonClasses: " btn",
+                    applyClass: "btn-primary",
+                    cancelClass: "btn-secondary",
+                });
+
+                // input group and left alignment setup
+
+                // predefined ranges
+                var start = moment().subtract(29, "days");
+                var end = moment();
+
+                $("#kt_daterangepicker_6").daterangepicker(
+                    {
+                        buttonClasses: " btn",
+                        applyClass: "btn-primary",
+                        cancelClass: "btn-secondary",
+
+                        startDate: start,
+                        endDate: end,
+                        ranges: {
+                            Today: [moment(), moment()],
+                            Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+                            "Last 7 Days": [moment().subtract(6, "days"), moment()],
+                            "Last 30 Days": [moment().subtract(29, "days"), moment()],
+                            "This Month": [moment().startOf("month"), moment().endOf("month")],
+                            "Last Month": [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+                        },
+                    },
+                    function (start, end, label) {
+                        $("#kt_daterangepicker_6 .form-control").val(start.format("MM/DD/YYYY") + " - " + end.format("MM/DD/YYYY"));
+                    }
+                );
+            };
+
+            return {
+                // public functions
+                init: function () {
+                    demos();
+                },
+            };
+        })();
+
+        jQuery(document).ready(function () {
+            KTBootstrapDaterangepicker.init();
+        });
+
+
+ checkAllBoxes=(e)=>{
+           
+            var set = $("#kt_datatable").find('td:first-child .checkable');
+            var checked = $(e).is(':checked');
+
+            $(set).each(function() {
+                if (checked) {
+                    $(this).prop('checked', true);
+                    $(this).closest('tr').addClass('selected');
+
+                    
+                }
+                else {
+                    $(this).prop('checked', false);
+                    $(this).closest('tr').removeClass('selected');
+                }
+            });
+        }
+
+    </script>
+</html>
