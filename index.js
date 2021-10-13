@@ -11,12 +11,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/resource', getResources);
 
-app.get('/blogs/view' , async (req , res)=>{
+app.get('/blogs/view', async (req, res) => {
     res.render('resource/view')
 });
 
-  
+
 
 // assign port
-const port = 8080;
-app.listen(port, () => console.log(`This app is listening on port ${port}`));  
+const port = process.env.PORT || 8080;
+app.listen(port, () => console.log(`This app is listening on port ${port}`));
